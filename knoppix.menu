@@ -1,0 +1,13 @@
+MENU BEGIN KNOPPIXMEN
+MENU LABEL ^Knoppix 6.7.1
+# ------====> Include Menu Settings <====------
+MENU INCLUDE er/menuinc/header.module
+
+# ------====> Set Specific Page Settings <====------
+MENU BACKGROUND er/plugins/knoppix/knoppix.png
+
+MENU INCLUDE er/plugins/knoppix/knoppixmain.menu
+
+# ------====> Back <====------
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END

@@ -1,0 +1,8 @@
+.:
+filelist.txt
+knoppixmain.menu
+knoppix.menu
+knoppix.png
+linux
+linux64
+miniroot.gz

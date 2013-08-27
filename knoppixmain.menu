@@ -1,0 +1,35 @@
+LABEL KNOPPIX86
+MENU LABEL ^Knoppix x86 - Start X
+KERNEL er/plugins/knoppix/linux
+INITRD er/plugins/knoppix/miniroot.gz
+APPEND nfsdir=10.0.0.1:/tftpboot/er/shares/knoppix nodhcp lang=us ramdisk_size=100000 init=/etc/init apm=power-off nomce noapic dma vga=773 lang=en libata.force=noncq hpsa.hpsa_allow_any=1 BOOT_IMAGE=knoppix
+TEXT HELP
+                 Knoppix x86 - Start X.
+ENDTEXT
+
+LABEL KNOPPIX86CLI
+MENU LABEL ^Knoppix x86 - CLI
+KERNEL er/plugins/knoppix/linux
+INITRD er/plugins/knoppix/miniroot.gz
+APPEND nfsdir=10.0.0.1:/tftpboot/er/shares/knoppix nodhcp lang=us ramdisk_size=100000 init=/etc/init 2 apm=power-off nomce noapic dma vga=773 lang=en libata.force=noncq hpsa.hpsa_allow_any=1 BOOT_IMAGE=knoppix
+TEXT HELP
+                 Knoppix x86 - Text Mode.
+ENDTEXT
+
+LABEL KNOPPIX64
+MENU LABEL ^Knoppix x64 - Start X
+KERNEL er/plugins/knoppix/linux64
+INITRD er/plugins/knoppix/miniroot.gz
+APPEND nfsdir=10.0.0.1:/tftpboot/er/shares/knoppix nodhcp lang=us ramdisk_size=100000 init=/etc/init apm=power-off nomce noapic dma vga=773 lang=en libata.force=noncq hpsa.hpsa_allow_any=1 BOOT_IMAGE=knoppix
+TEXT HELP
+                 Knoppix x64 - Start X.
+ENDTEXT
+
+LABEL KNOPPIX64CLI
+MENU LABEL ^Knoppix x64 - CLI
+KERNEL er/plugins/knoppix/linux64
+INITRD er/plugins/knoppix/miniroot.gz
+APPEND nfsdir=10.0.0.1:/tftpboot/er/shares/knoppix nodhcp lang=us ramdisk_size=100000 init=/etc/init 2 apm=power-off nomce noapic dma vga=773 lang=en libata.force=noncq hpsa.hpsa_allow_any=1 BOOT_IMAGE=knoppix
+TEXT HELP
+                 Knoppix x64 - Text Mode.
+ENDTEXT
